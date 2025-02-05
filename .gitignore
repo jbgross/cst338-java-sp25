@@ -41,3 +41,4 @@ bin/
 ### Mac OS ###
 .DS_Store
 /untitled/.idea/workspace.xml
+/untitled/.idea/vcs.xml
