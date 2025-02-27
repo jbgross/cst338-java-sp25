@@ -10,16 +10,24 @@ import java.util.Scanner;
 public class CalculatorInput {
 
     private Scanner in;
-    public static final CalculatorInput instance;
+//    public static final CalculatorInput instance;
+    private static CalculatorInput instance;
 
-    static {
-        System.out.println("running static init");
-        instance = new CalculatorInput();
-    }
+//    static {
+//        System.out.println("running static init");
+//        instance = new CalculatorInput();
+//    }
 
     private CalculatorInput() {
         System.out.println("running constructor");
         in = new Scanner(System.in);
+    }
+
+    public static CalculatorInput getInstance() {
+        if(instance == null) {
+            instance = new CalculatorInput();
+        }
+        return instance;
     }
 
     public int getInt() {
