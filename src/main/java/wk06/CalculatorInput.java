@@ -19,7 +19,7 @@ public class CalculatorInput {
 //    }
 
     private CalculatorInput() {
-        System.out.println("running constructor");
+//        System.out.println("running constructor");
         in = new Scanner(System.in);
     }
 
@@ -37,6 +37,17 @@ public class CalculatorInput {
                 return in.nextInt();
             } else {
                 in.nextLine();
+            }
+        } while(true);
+    }
+
+    public char getOperation() {
+        do {
+            System.out.print("Enter operation (+ =): ");
+            String input = in.next();
+
+            if(input.startsWith("+") || input.startsWith("=") ) {
+                return input.charAt(0);
             }
         } while(true);
     }

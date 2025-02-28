@@ -1,21 +1,28 @@
 package wk06;
 
-public class Operation {
+public abstract class Operation {
 
-    private int left;
-    private int right;
+    private final int left;
+
+
+    private final int right;
 
     public Operation(int left, int right) {
         this.left = left;
         this.right = right;
     }
 
-    public int execute() {
-        return left + right;
-    }
+    public abstract int execute();
 
     @Override
-    public String toString() {
-        return left + " + " + right + " = " + execute();
+    public abstract String toString();
+
+    public int getRight() {
+        return right;
     }
+
+    public int getLeft() {
+        return left;
+    }
+
 }

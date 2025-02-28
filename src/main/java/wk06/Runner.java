@@ -4,6 +4,8 @@ public class Runner {
     public static void main(String[] args) {
         System.out.println("starting code");
         CalculatorInput ci = CalculatorInput.getInstance();
+        char op = ci.getOperation();
+        System.out.println(op);
 //        CalculatorInput ci = CalculatorInput.instance;
 //        System.out.println(ci);
 //        System.out.println(System.out.getClass());
