@@ -17,12 +17,12 @@ class OperationTest {
 
     @BeforeAll
     static void init() {
-        o2 = new Operation(12, 16);
+        o2 = new Addition(12, 16);
     }
 
     @BeforeEach
     void setUp() {
-        o1 = new Operation(left1, right1);
+        o1 = new Addition(left1, right1);
     }
 
     @Test
