@@ -20,7 +20,13 @@ public class Calculator {
             }
 
             int right = ci.getInt();
-            Operation o1 = new Addition(left, right);
+            Operation o1;
+            if(op == '*') {
+                o1 = new Multiplication(left, right);
+            } else {
+                o1 = new Addition(left, right);
+            }
+
             System.out.println("Result: " + o1);
             history.addLast(o1);
             op = ci.getOperation();

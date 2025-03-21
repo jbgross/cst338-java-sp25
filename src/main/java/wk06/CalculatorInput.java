@@ -43,10 +43,12 @@ public class CalculatorInput {
 
     public char getOperation() {
         do {
-            System.out.print("Enter operation (+ =): ");
+            System.out.print("Enter operation (+ * =): ");
             String input = in.next();
 
-            if(input.startsWith("+") || input.startsWith("=") ) {
+            if(input.startsWith("+") || input.startsWith("=")
+                    || input.startsWith("*"))
+            {
                 return input.charAt(0);
             }
         } while(true);

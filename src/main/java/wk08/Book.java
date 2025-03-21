@@ -1,5 +1,5 @@
 package wk08;
-import java.util.List;
+
 public class Book extends LibraryItem implements Printable {
 
     private final String title;

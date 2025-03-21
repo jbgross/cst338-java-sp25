@@ -1,0 +1,15 @@
+Options: 
+	0 - Coffee
+	1 - Finish
+Enter your selection: 
+0 - Small $1.50
+1 - Medium $2.50
+2 - Large $3.75
+What do you want? 
+Options: 
+	0 - Coffee
+	1 - Finish
+Enter your selection: 
+Medium Regular Coffee $2.50
+
+Total: $2.50
